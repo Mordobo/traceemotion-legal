@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · TraceEmotion</title>
+<meta name="description" content="How TraceEmotion handles your data: no account, it stays on the phone, and in the system backup if you have it turned on.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#1b151c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbf7fa" media="(prefers-color-scheme: light)">
+<link rel="alternate" hreflang="es" href="../../es/privacidad/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b151c'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23d890e6'/%3E%3C/svg%3E">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #1b151c;
+  --surface: #261c28;
+  --text: #f6eef5;
+  --muted: #b7a8b6;
+  --divider: rgba(246,238,245,0.12);
+  --accent: #d890e6;
+  --accent-soft: #3a2a3d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fbf7fa;
+    --surface: #ffffff;
+    --text: #241820;
+    --muted: #6c5a68;
+    --divider: rgba(36,24,32,0.12);
+    --accent: #9544a4;
+    --accent-soft: #f8defc;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
+.skip:focus { left: 16px; }
+header.top { border-bottom: 1px solid var(--divider); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 500; font-size: 17px; }
+.brand .mark { color: var(--accent); flex: none; }
+.brand b { color: var(--accent); font-weight: 500; }
+.lang { font-size: 14px; font-weight: 500; padding: 8px 12px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; white-space: nowrap; }
+main { padding: 28px 0 48px; }
+h1 { font-size: 28px; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 12px; }
+h2 { font-size: 20px; line-height: 1.3; font-weight: 600; margin: 40px 0 10px; scroll-margin-top: 16px; }
+h3 { font-size: 17px; line-height: 1.35; font-weight: 600; margin: 26px 0 8px; scroll-margin-top: 16px; }
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; }
+li { margin: 0 0 6px; }
+li::marker { color: var(--accent); }
+strong { font-weight: 600; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+.meta strong { color: var(--text); }
+nav.toc { margin: 22px 0 0; padding: 14px 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--divider); }
+nav.toc summary { cursor: pointer; font-weight: 600; }
+nav.toc ol { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+nav.toc li { margin: 4px 0; }
+section.summary { margin-top: 26px; padding: 4px 18px 6px; border-radius: 16px; background: var(--accent-soft); }
+section.summary h2 { margin-top: 16px; }
+section.summary a { color: var(--text); }
+table { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: 15px; background: var(--surface); border-radius: 12px; overflow: hidden; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--divider); }
+tr:first-child th, tr:first-child td { border-top: 0; }
+th { width: 34%; font-weight: 600; color: var(--muted); }
+@media (max-width: 560px) {
+  table, tbody, tr, th, td { display: block; width: 100%; }
+  th { padding-bottom: 0; }
+  td { border-top: 0; padding-top: 4px; }
+}
+footer { border-top: 1px solid var(--divider); color: var(--muted); font-size: 14px; }
+footer .wrap { padding-top: 20px; padding-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.hero { padding: 40px 0 8px; }
+.hero .mark { color: var(--accent); display: block; margin: 0 0 18px; }
+.hero h1 { font-size: 34px; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 14px; }
+.hero h1 b { color: var(--accent); font-weight: 500; }
+.lead { font-size: 18px; margin: 0 0 6px; }
+.lead.en { color: var(--muted); font-size: 16px; }
+.cards { display: grid; gap: 12px; margin: 30px 0 0; }
+@media (min-width: 560px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { display: block; padding: 16px 18px; border-radius: 16px; background: var(--surface); border: 1px solid var(--divider); text-decoration: none; color: var(--text); }
+.card:hover { border-color: var(--accent); }
+.card strong { display: block; font-size: 17px; color: var(--accent); margin: 0 0 4px; }
+.card span { color: var(--muted); font-size: 14px; }
+.contact { margin: 30px 0 0; padding: 16px 18px; border-radius: 16px; background: var(--accent-soft); }
+.contact p { margin: 0 0 6px; }
+.contact a { color: var(--text); }
+.small { color: var(--muted); font-size: 14px; }
+.disclaimer { margin-top: 24px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../" aria-label="TraceEmotion, home"><svg class="mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false"><rect x="1" y="1" width="62" height="62" rx="16" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="8" fill="currentColor"/></svg><span><b>Trace</b>Emotion</span></a>
+<a class="lang" href="../../es/privacidad/" hreflang="es" lang="es">Español</a>
+</div></header>
+<main id="content"><div class="wrap">
+
+<h1>TraceEmotion Privacy Policy</h1>
+<p class="meta"><strong>Version 1.0 · Effective November 9, 2026</strong></p>
+<p class="meta">Changelog: v1 (November 9, 2026) — first published version.</p>
+<nav class="toc" aria-label="Contents"><details><summary>Contents</summary><ol>
+<li><a href="#1">1. Who is responsible</a></li>
+<li><a href="#2">2. What data the app uses and where it is stored</a></li>
+<li><a href="#3">3. What it is used for</a></li>
+<li><a href="#4">4. Legal basis</a></li>
+<li><a href="#5">5. Who it is shared with</a></li>
+<li><a href="#6">6. International transfers</a></li>
+<li><a href="#7">7. How long it is kept</a></li>
+<li><a href="#8">8. Your rights</a></li>
+<li><a href="#9">9. Children</a></li>
+<li><a href="#10">10. Security</a></li>
+<li><a href="#11">11. How to exercise your rights</a></li>
+<li><a href="#12">12. Changes</a></li>
+<li><a href="#13">13. Notice</a></li>
+<li><a href="#14">14. Licenses</a></li>
+</ol></details></nav>
+<section class="summary" aria-labelledby="summary">
+<h2 id="summary">Summary</h2>
+<ul>
+<li>There is no account. Your mood, journal, name and practice history stay on the phone.</li>
+<li>TraceEmotion does not receive them and does not sell them. There is no analytics and no advertising.</li>
+<li>If your phone's backup is on, Google or Apple may keep a copy in your account. We cannot read it.</li>
+<li>When it opens, the app requests a public catalogue (the practices and the sounds) from a server in Frankfurt. That request does not include your mood, your journal or your name.</li>
+<li>To check for updates, the app sends an installation identifier, the platform and the version. It is not the advertising identifier.</li>
+<li>Practice and mood reminders are local notifications. They are scheduled only if you turn them on.</li>
+<li>From Settings you can export a JSON copy, or delete moods, the journal, sessions and saved items. Your name and settings stay.</li>
+<li>It is not a medical device.</li>
+</ul>
+</section>
+<section>
+<h2 id="1">1. Who is responsible</h2>
+<p>TraceEmotion is an app by <strong>MORDOBO TECHNOLOGIES LLC</strong> ("Mordobo", "we").</p>
+<ul>
+<li>Legal form: a limited liability company (LLC) organized in Florida, United States.</li>
+<li>Address: 2 S Biscayne Blvd, Ste 3200 #7229, Miami, FL 33131, United States.</li>
+<li>Contact: <a href="mailto:support@mordobo.com">support@mordobo.com</a>. For a privacy request, use the subject "Privacy".</li>
+</ul>
+<p>Mordobo designs and publishes the app and is the controller of the processing that happens on your phone, even though we do not receive that data: in this version the app does not send it to us, so we do not see it or store it. What does leave the phone is described in section 2.5.</p>
+</section>
+<section>
+<h2 id="2">2. What data the app uses and where it is stored</h2>
+<p>What you write is stored in the app's private storage on the phone. The app is set up so that this information is included in the system backup: on Android, Google's backup, if you have it on; on iPhone, iCloud or the computer backup, if you have it on. You can turn that off in the system settings. We have no access to that copy.</p>
+<h3 id="2-1">2.1 Profile and settings</h3>
+<table><tbody>
+<tr><th scope="row">What it includes</th><td>Your name, if you type one. The theme (system, dark or light) and the language (Spanish or English). Your onboarding answers: what you want to use the app for, your level, the minutes you prefer and the days you plan. Whether you turn on the practice reminder and at which time (8:00, 14:00 or 21:30), and whether you turn on the 20:00 mood check-in. Whether you want sounds and vibration.</td></tr>
+<tr><th scope="row">What for</th><td>To greet you, to show the app in your language and theme, and to schedule the reminders you turn on.</td></tr>
+<tr><th scope="row">Is it required?</th><td>No. You can skip onboarding. Without a name, the greeting does not use one.</td></tr>
+<tr><th scope="row">Where</th><td>On the phone and, if it is on, in its backup.</td></tr>
+</tbody></table>
+<h3 id="2-2">2.2 Mood, journal and practices</h3>
+<table><tbody>
+<tr><th scope="row">What it includes</th><td>The mood you log and the day. Journal entries: text, time, mood, tags and the practice they belong to, if any. For each finished practice: the day, the time, which practice it was, the minutes and, if a mood was already logged that day when the closing screen opened, that mood. Practices you save, a session left halfway, and the last sound mix you save.</td></tr>
+<tr><th scope="row">What for</th><td>To show you your own record, your progress and what you left unfinished. There are no streaks: a free day never subtracts.</td></tr>
+<tr><th scope="row">Is it required?</th><td>No. Only what you choose to log exists.</td></tr>
+<tr><th scope="row">Where</th><td>On the phone and, if it is on, in its backup. It is not sent to Mordobo.</td></tr>
+</tbody></table>
+<p>The mood log and the journal can describe how you feel. We treat them as intimate information. They stay on the phone and we do not use them for advertising or to build a commercial profile.</p>
+<h3 id="2-3">2.3 What the app does not do</h3>
+<ul>
+<li>It does not ask for an account or a sign-in.</li>
+<li>It does not include analytics, advertising or a crash-reporting SDK.</li>
+<li>It does not ask for location, camera, microphone, contacts or photos. The microphone permission is blocked: the app plays sound, it does not record.</li>
+<li>It does not ask permission to track you across other companies' apps and websites.</li>
+<li>It does not sell data. This version has no purchases.</li>
+</ul>
+<p>On Android, the permission list can include internet, seeing the network state, notifications, vibration, keeping the phone awake while audio plays, a foreground service for audio playback, and rescheduling reminders after a restart. Notifications are used only if you turn a reminder on, and from Android 13 the system asks you at that moment. The foreground service lets a practice or a mix keep playing with the screen locked, and shows the playback control. On iPhone, the app can ask for notifications when you turn a reminder on, and it declares the background-audio mode for the same reason: so the sound continues with the screen locked.</p>
+<p><strong>Reminders.</strong> If you turn on the practice reminder, the phone schedules a local alert on the days you chose, at 8:00, 14:00 or 21:30. If you turn on the mood check-in, it schedules another at 20:00. They are notifications on the phone itself: there is no push-notification identifier and nothing is sent to a server to display them. You can turn them off in the app or in the system settings.</p>
+<h3 id="2-4">2.4 Export and delete</h3>
+<p>Settings › Your data › "Export backup" prepares a JSON file of what is saved and opens the phone's share sheet. The file is yours: the app does not upload it. Settings › Your data › "Delete all" asks you to confirm and, if you confirm, deletes moods, the journal, sessions, saved practices, a session left halfway and the saved mix. Your name, theme, language and other settings stay. It cannot be undone inside the app.</p>
+<h3 id="2-5">2.5 What does leave the phone</h3>
+<ul>
+<li><strong>Public catalogue.</strong> When it opens, the app requests the practices, collections, sounds and the app's public configuration from a Supabase project in Frankfurt, Germany (European Union). The request is encrypted (HTTPS) and does not include your name, your mood, your journal or your sessions. Supabase can see the IP address of the connection, as any server can. With no network, the app uses the catalogue bundled inside it. Supabase's policy is at <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
+<li><strong>Update checks.</strong> The app asks Expo's update service whether an update is available. That request includes an identifier for this installation, the platform, the channel and the version. It is not the phone's advertising identifier and it is not tied to your name. Expo's policy is at <a href="https://expo.dev/privacy">expo.dev/privacy</a>.</li>
+<li><strong>If you write to us</strong> at support@mordobo.com: your email address, what you tell us and what you attach. We use it to reply. The mailbox is on Google (Google Workspace). Do not send us the contents of your journal: we do not need them to help you.</li>
+<li><strong>If you post a review</strong> on Google Play or the App Store, we see the review and the public name on that account, as anyone can, and we can reply there.</li>
+<li><strong>Store reports.</strong> Google Play and App Store Connect can show us aggregated install statistics and, for people who have agreed to share diagnostic data with the store, technical crash reports (model, system version and where it failed). Those reports do not include your name. We do not add a crash SDK of our own.</li>
+<li><strong>If you visit this website:</strong> it does not use cookies or analytics. It is hosted on GitHub Pages (GitHub, Inc.), which may log the IP address of a visit for security, under its own privacy statement. We do not receive those logs.</li>
+</ul>
+</section>
+<section>
+<h2 id="3">3. What it is used for</h2>
+<ul>
+<li>To show you the app, your practices, your mood and your journal, on the phone.</li>
+<li>To schedule the local reminders you turn on.</li>
+<li>To let you export or delete what you saved.</li>
+<li>To download the public catalogue and check whether an app update is available.</li>
+<li>To reply if you write to us, and to fix failures using the stores' reports.</li>
+</ul>
+<p>We do not build profiles for advertising and we do not make automated decisions that have legal effects on you. What the app suggests you practise is calculated on the phone from what you logged, and you can choose not to do it.</p>
+</section>
+<section>
+<h2 id="4">4. Legal basis</h2>
+<p>In the European Economic Area, the United Kingdom and Switzerland:</p>
+<ul>
+<li><strong>What you save on the phone</strong> (name, settings, mood, journal and practices) is necessary to provide the feature you use (GDPR art. 6.1.b). To the extent a mood or a journal entry reveals information about your health, that processing happens only on your phone, to show you your own record, and it is not transmitted to us.</li>
+<li><strong>Catalogue and update checks:</strong> necessary for the app to work and stay current (GDPR art. 6.1.b).</li>
+<li><strong>Email:</strong> if you exercise a data-protection right, our obligation to handle it (art. 6.1.c); otherwise, our legitimate interest in replying (art. 6.1.f).</li>
+<li><strong>The stores' crash reports and this website's logs:</strong> legitimate interest in the app and the website working (art. 6.1.f).</li>
+</ul>
+<p>In Mexico, the on-device processing is what is necessary to provide the service you ask for. In Colombia, your authorization by using the app (Law 1581 of 2012). In the Dominican Republic, what is necessary to provide the service (Law 172-13). In other countries, the basis your law provides.</p>
+</section>
+<section>
+<h2 id="5">5. Who it is shared with</h2>
+<p>We do not sell your data and we do not give it to advertising networks. These parties are involved:</p>
+<ul>
+<li><strong>Google and Apple,</strong> which distribute the app on Google Play and the App Store, each under its own policy. They make the backup, in your account, if you have it turned on. We have no access.</li>
+<li><strong>Supabase,</strong> which receives the public-catalogue request in Frankfurt. It does not receive your mood, your journal or your name.</li>
+<li><strong>Expo,</strong> which receives the installation identifier and the technical data in section 2.5 in order to deliver updates.</li>
+<li><strong>Google (Google Workspace),</strong> which stores, on our behalf, the email you send us.</li>
+<li><strong>GitHub, Inc.,</strong> which serves this website.</li>
+<li><strong>Whoever you choose</strong> when you export a copy: from the share sheet, that copy is under your control and under the policy of whoever receives it.</li>
+</ul>
+</section>
+<section>
+<h2 id="6">6. International transfers</h2>
+<p>The catalogue request goes to Germany (European Union). The update check goes to Expo, which may process it in the United States. If you write to us, the email reaches us in the United States and may be stored on Google's servers in the United States or other countries. GitHub serves this website from the United States and other countries. For data that arrives from the European Economic Area, the United Kingdom and Switzerland, those providers state transfer mechanisms such as the Data Privacy Framework or standard contractual clauses, as described in their own policies. A Google or Apple backup may be stored in other countries, under their policy and your account.</p>
+</section>
+<section>
+<h2 id="7">7. How long it is kept</h2>
+<ul>
+<li><strong>On the phone:</strong> until you use "Delete all", clear the app's storage in Android settings, or uninstall it (on iPhone, "Delete App"). "Offload App" on iPhone removes the app and can keep the data: to delete the data you have to delete the app.</li>
+<li><strong>Backups:</strong> Google's or Apple's own retention, not the button in the app. Deleting in the app does not instantly delete a backup that already exists. You can manage it in your Google account settings or, on iPhone, in Settings › your name › iCloud.</li>
+<li><strong>Installation identifier:</strong> for as long as that installation exists. Clearing storage or reinstalling creates another one. We cannot tie it to a person.</li>
+<li><strong>Email:</strong> as long as needed to handle your message and, after that, up to 3 years, so we can show how we handled the request.</li>
+<li><strong>Cached catalogue:</strong> public content, not your data. It is replaced when a new one arrives.</li>
+</ul>
+</section>
+<section>
+<h2 id="8">8. Your rights</h2>
+<p>Because we do not receive your mood or your journal, we cannot see or change them for you. You exercise those rights on the phone:</p>
+<ul>
+<li><strong>Access and portability:</strong> Settings › Your data › "Export backup".</li>
+<li><strong>Correction:</strong> your name, theme, language and reminders are changed in Settings. A single journal entry cannot be edited in this version: you can delete everything, or write to us and we will tell you what the options are.</li>
+<li><strong>Deletion:</strong> Settings › Your data › "Delete all". There is no account to delete.</li>
+<li><strong>Reminders:</strong> turn them off in Settings or in the phone's notification settings.</li>
+<li><strong>Objection and restriction:</strong> you can choose not to log a mood, turn reminders off, delete the data or stop using the app.</li>
+</ul>
+<p>For email you send us, you can exercise your rights by writing to us. We reply within the time your law sets: at most one month in the European Economic Area, unless extended. Exercising them is free.</p>
+<p>In Spain and the rest of the European Economic Area you can complain to the Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>) or to the authority in your country. In Mexico, ARCO rights can also be taken to the competent authority if we do not answer in time. In Colombia, to the Superintendence of Industry and Commerce, after you have asked us. In the Dominican Republic, you can go to the courts through habeas data if we do not answer in time.</p>
+</section>
+<section>
+<h2 id="9">9. Children</h2>
+<p>TraceEmotion is intended for people aged 18 or older. It is not directed at children and we do not knowingly ask them for data. The app does not check age. If you are a parent or guardian and you believe a child is using it, delete the data with "Delete all" or delete the app, and remember the backup (section 7). You can also write to us.</p>
+</section>
+<section>
+<h2 id="10">10. Security</h2>
+<ul>
+<li>The data is in the app's private storage. In ordinary conditions, the system stops other apps from reading it.</li>
+<li>The app does not add encryption of its own. The phone protects it with the screen lock and the system's encryption. Anyone who can use the unlocked phone can open the app.</li>
+<li>What travels over the network (the catalogue and the update check) uses HTTPS.</li>
+<li>The file you export contains your journal. Keep it and share it carefully.</li>
+</ul>
+</section>
+<section>
+<h2 id="11">11. How to exercise your rights</h2>
+<ul>
+<li><strong>In the app:</strong> export or delete, in Settings › Your data.</li>
+<li><strong>By email:</strong> <a href="mailto:support@mordobo.com">support@mordobo.com</a>, with the subject "Privacy". Include your name, the country you are writing from, what you are asking for and an address for the reply. Do not send us the journal.</li>
+</ul>
+<p>This page is the privacy policy. In the app it opens from Settings › About › "Privacy policy", in the app's language.</p>
+</section>
+<section>
+<h2 id="12">12. Changes</h2>
+<p>If the processing changes, we will update the version and the date on this page, and we will say so in the store release notes of the version that includes the change, before it applies. This version has no purchases. If a paid plan is offered later, Google Play or the App Store will bill it, and we will update this policy before turning it on.</p>
+</section>
+<section>
+<h2 id="13">13. Notice</h2>
+<p>TraceEmotion is not a medical device. Meditation, breathing, yoga, sounds and the journal do not diagnose, treat, cure or prevent any condition, and they do not replace care from a professional. If you have a health concern, talk to a professional.</p>
+</section>
+<section>
+<h2 id="14">14. Licenses</h2>
+<p>The interface icons are Phosphor, under the MIT license. The typeface is Inter, under the SIL Open Font License 1.1. Those licenses cover the interface design; they do not change what this policy says about your data.</p>
+</section>
+
+</div></main>
+<footer><div class="wrap">
+<span>TraceEmotion</span>
+<a href="mailto:support@mordobo.com">support@mordobo.com</a>
+<a href="../../">Home</a>
+<a href="../../es/privacidad/" hreflang="es" lang="es">Español</a>
+</div></footer>
+</body>
+</html>
